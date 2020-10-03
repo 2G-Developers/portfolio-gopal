@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: 'Having 3+ years of experience in Frontend development with some knowledge of backend Technology. I have proficient knowledge in JavaScript and able to learn any technology within less time by exploring official documentation.',
   paragraphTwo: 'I am a Pet Lover, Traveler, PC Enthusiast ❤',
   paragraphThree: '',
-  resume: 'https://drive.google.com/uc?export=download&id=1krxq3GuKePz1pXH7NZ29TxSNY3XWQ_Zf', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/uc?export=download&id=1_anwAkGToo_D3CN5koY4hqBI7g7IGzX_', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
