@@ -194,6 +194,84 @@ Before Jumping into the topic, let's understand how the browser renders the webs
         </div>
       </Container>
     </section>
+    <section id="projects">
+      <Container>
+        <div className="project-wrapper">
+          <Title title="Talk" />
+          {projects.map((project) => {
+            const { title, info, info2, url, repo, img, id } = project;
+
+            return (
+              <Row key={id}>
+                <Col lg={4} sm={12}>
+                  <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__text">
+                      <h3 className="project-wrapper__text-title">Event Bubbling and Event Capturing</h3>
+                      <div>
+                        <p>
+                        We will have a deeper look on events and how events works by understanding bubbling, capturing, stopping propagation, and more!
+                        </p>
+                        <p className="mb-4"></p>
+                      </div>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--hero"
+                        href="https://www.youtube.com/watch?v=3k__0LmsdWo"
+                      >
+                        Watch
+                      </a>
+                    </div>
+                  </Fade>
+                </Col>
+                <Col lg={8} sm={12}>
+                  <Fade
+                    right={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={1000}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__image">
+                      <a
+                        href="https://www.youtube.com/watch?v=3k__0LmsdWo"
+                        target="_blank"
+                        aria-label="Project Link"
+                        rel="noopener noreferrer"
+                      >
+                        <Tilt
+                          options={{
+                            reverse: false,
+                            max: 8,
+                            perspective: 1000,
+                            scale: 1,
+                            speed: 300,
+                            transition: true,
+                            axis: null,
+                            reset: true,
+                            easing: 'cubic-bezier(.03,.98,.52,.99)',
+                          }}
+                        >
+                          <div data-tilt className="thumbnail rounded">
+                            <ProjectImg alt={title} filename="Event.jpg" />
+                          </div>
+                        </Tilt>
+                      </a>
+                    </div>
+                  </Fade>
+                </Col>
+              </Row>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
     </>
     
   );
